@@ -54,7 +54,7 @@ Line charts for cases and deaths over time.
 A choropleth map showing global case distribution.
 
 
-Insights: Review the "Step 5: Insights & Narrative" section for key findings. Update placeholders (e.g., [Country X], [specific date]) with specific values after running the analysis.
+Insights: Review the "Step 5: Insights & Narrative" section for key findings, including specific trends and anomalies for the selected countries.
 
 Project Structure
 The notebook follows a clear, step-by-step structure:
@@ -82,9 +82,9 @@ Contact Joseph Onyango at jesuspromisesmedia@gmail.com for any questions or clar
 
 Future Improvements
 
-Incorporate vaccination data from another source (e.g., Our World in Data).
-Build an interactive dashboard using Streamlit or Dash.
-Analyze the impact of specific policies (e.g., lockdowns) on case trends.
+Integrate vaccination data from sources like Our World in Data to analyze immunization trends.
+Develop an interactive dashboard using Streamlit or Dash for user-driven exploration.
+Investigate the impact of specific policies (e.g., lockdowns, travel bans) on case trends.
 
 References
 
