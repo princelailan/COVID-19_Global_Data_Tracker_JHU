@@ -1,98 +1,139 @@
-COVID-19 Global Data Tracker
-Project Overview
-The COVID-19 Global Data Tracker is a data analysis project by Joseph Onyango that explores global COVID-19 trends, including cases and deaths, using the Johns Hopkins University (JHU) CSSE COVID-19 dataset. Built in a Jupyter Notebook, the project performs data cleaning, exploratory data analysis (EDA), visualizations, and narrative reporting to uncover insights about the pandemic’s impact across countries.
-Objectives
+# 🦠 COVID-19 Global Data Tracker
 
-Import and clean global COVID-19 data from JHU CSSE.
-Analyze time trends for cases and deaths.
-Compare metrics across countries (Kenya, United States, India).
-Visualize trends with line charts and a choropleth map.
-Summarize findings in a clear, reproducible Jupyter Notebook report.
+A data analysis and visualization project by **Joseph Onyango** that explores global COVID-19 trends, including confirmed cases and deaths, using the Johns Hopkins University (JHU) CSSE COVID-19 dataset. Built using Python in Jupyter Notebook, the project covers data cleaning, exploratory data analysis (EDA), interactive visualizations, and key insights.
 
-Key Features
+---
 
-Data Cleaning: Reshapes JHU’s time-series data, handles missing values, and formats dates using pandas.
-EDA: Calculates death rates and analyzes trends over time.
-Visualizations: Includes line charts (cases, deaths) and a global choropleth map using Plotly.
-Narrative: Provides 5 key insights, such as case trends, death rate variations, and data limitations.
-Reproducibility: Loads data from JHU CSSE URLs, ensuring easy execution without local files.
+## 📌 Project Overview
 
-Repository Contents
+This project investigates the global impact of COVID-19 using real-world data. It provides:
 
-covid19_global_tracker.ipynb: The main Jupyter Notebook containing all code, visualizations, and narrative.
-Note: No dataset files are included, as the notebook fetches data from:
-Confirmed cases
-Deaths
+- Cleaned and reshaped JHU time-series data.
+- Comparative analysis across countries (e.g., Kenya, United States, India).
+- Visual storytelling through line charts and choropleth maps.
+- Narrative summaries and data-driven insights.
 
+---
 
+## 🎯 Objectives
 
-Setup Instructions
-To run the project, you need a Jupyter Notebook environment with the required Python libraries. Follow these steps:
+- Import and preprocess global COVID-19 data from JHU CSSE.
+- Analyze time trends in cases and deaths.
+- Compare country-level data.
+- Create interactive visualizations (line charts and global maps).
+- Deliver a clear and reproducible data story.
 
-Clone or Download the Repository:
+---
+
+## ✨ Key Features
+
+- **Data Cleaning**: Reshaping time-series data, handling null values, and formatting dates using `pandas`.
+- **EDA**: Time-based analysis and calculation of death rates.
+- **Visualizations**: 
+  - Line charts for country-level trends.
+  - Choropleth map for global case distribution using `plotly`.
+- **Narrative Insights**: Highlights patterns, anomalies, and limitations of the dataset.
+- **Reproducibility**: Uses up-to-date data fetched directly from JHU CSSE URLs.
+
+---
+
+## 📁 Repository Contents
+
+- `covid19_global_tracker.ipynb` — Main Jupyter Notebook containing the complete workflow.
+- No local datasets are included; data is fetched live from:
+  - Confirmed cases: https://github.com/CSSEGISandData/COVID-19
+  - Deaths: https://github.com/CSSEGISandData/COVID-19
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone or Download the Repository
+
+```bash
 git clone https://github.com/princelailan/COVID-19_Global_Data_Tracker_JHU.git
+```
 
-Or download the covid19_global_tracker.ipynb file directly.
+Or download the `covid19_global_tracker.ipynb` file directly from the repository.
 
-Install Dependencies:Ensure Python 3.8+ is installed, then install the required libraries:
+### 2. Install Required Libraries
+
+Ensure Python 3.8+ is installed, then install dependencies:
+
+```bash
 pip install pandas matplotlib seaborn plotly
+```
 
+### 3. Run the Notebook
 
-Run the Notebook:
+- Open the notebook in Jupyter Notebook, JupyterLab, or Google Colab.
+- Run all cells in order. The notebook automatically pulls data from JHU CSSE.
 
-Open covid19_global_tracker.ipynb in Jupyter Notebook, JupyterLab, or Google Colab.
-Run all cells sequentially. The notebook fetches data directly from JHU CSSE URLs.
+---
 
+## 🚀 Usage
 
+- **Run the Notebook**: Load data, clean it, visualize, and extract insights.
+- **Customize Countries**: Modify the `countries` list (e.g., `['Kenya', 'India', 'United States']`) to analyze different regions.
+- **View Outputs**:
+  - Line charts of cases and deaths.
+  - A global choropleth map of confirmed cases.
 
-Usage
+---
 
-Running the Notebook: Execute each cell in covid19_global_tracker.ipynb to load data, clean it, generate visualizations, and view insights.
-Customizing Analysis: Modify the countries list in the notebook (e.g., countries = ['Kenya', 'United States', 'India']) to analyze other countries.
-Viewing Visualizations: The notebook produces:
-Line charts for cases and deaths over time.
-A choropleth map showing global case distribution.
+## 📊 Project Structure
 
+1. **Data Loading & Exploration**
+2. **Data Cleaning & Reshaping**
+3. **Exploratory Data Analysis (EDA)**
+4. **Choropleth Mapping**
+5. **Narrative & Insights**
 
-Insights: Review the "Step 5: Insights & Narrative" section for key findings, including specific trends and anomalies for the selected countries.
+---
 
-Project Structure
-The notebook follows a clear, step-by-step structure:
+## 🔍 Insights & Narrative
 
-Data Loading & Exploration: Loads and inspects the JHU dataset.
-Data Cleaning: Filters countries, reshapes time-series data, and handles missing values.
-Exploratory Data Analysis (EDA): Analyzes trends and calculates death rates.
-Choropleth Map: Displays global case distribution.
-Insights & Narrative: Summarizes findings with a conclusion and future work suggestions.
+Visit **"Step 5: Insights & Narrative"** in the notebook to explore key takeaways:
 
-Submission Details
-This project, authored by Joseph Onyango, is part of a data analysis assignment. The covid19_global_tracker.ipynb file fulfills all requirements, including:
+- Trends of case surges over time.
+- Death rate comparisons.
+- Data limitations (e.g., underreporting, inconsistent testing).
 
-Data collection from JHU CSSE.
-Data cleaning and preparation.
-EDA with calculated metrics (death rates).
-Visualizations (line charts, choropleth map).
-A well-documented report with code, visuals, and narrative insights.
+---
 
-To review the project:
+## 📝 Submission Details
 
-Access the notebook on GitHub: covid19_global_tracker.ipynb.
-Run it in a Jupyter environment to reproduce the analysis.
-Contact Joseph Onyango at jesuspromisesmedia@gmail.com for any questions or clarification.
+This notebook fulfills the final submission for the Python Development Module and includes:
 
-Future Improvements
+- Live data import from JHU CSSE
+- Full EDA process and visualizations
+- Well-documented steps and conclusions
 
-Integrate vaccination data from sources like Our World in Data to analyze immunization trends.
-Develop an interactive dashboard using Streamlit or Dash for user-driven exploration.
-Investigate the impact of specific policies (e.g., lockdowns, travel bans) on case trends.
+📄 Access it here: [GitHub Repo](https://github.com/princelailan/COVID-19_Global_Data_Tracker_JHU)
 
-References
+---
 
-Dataset: JHU CSSE COVID-19
-Alternative Source: Our World in Data COVID-19
-Libraries: pandas, matplotlib, seaborn, plotly
+## 🌱 Future Improvements
 
-Contact
-Author: Joseph OnyangoEmail: jesuspromisesmedia@gmail.comGitHub: princelailan  
-For questions or issues, please open an issue in this repository or contact Joseph via email.
-Happy exploring!
+- Integrate vaccination data (e.g., from Our World in Data).
+- Create an interactive dashboard using Streamlit or Dash.
+- Analyze policy effects (e.g., lockdowns, curfews) on COVID-19 trends.
+
+---
+
+## 📚 References
+
+- Dataset: [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19)
+- Alternative Source: [Our World in Data COVID-19](https://ourworldindata.org/coronavirus)
+- Libraries: `pandas`, `matplotlib`, `seaborn`, `plotly`
+
+---
+
+## 📬 Contact
+
+**Author**: Joseph Onyango  
+**Email**: [jesuspromisesmedia@gmail.com](mailto:jesuspromisesmedia@gmail.com)  
+**GitHub**: [@princelailan](https://github.com/princelailan)
+
+For issues or feedback, please open an issue in the repository or reach out by email.  
+**Happy exploring!** 🎉
